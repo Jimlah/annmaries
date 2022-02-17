@@ -1,6 +1,8 @@
-<div class="flex flex-col justify-center items-center">
+<div class="flex flex-col items-center justify-center">
     <!-- Be present above all else. - Naval Ravikant -->
-    <span></span>
-    <h3 class="font-semibold text-base tracking-tight text-green-900 mb-1">Bulk Sales</h3>
-    <p class="text-gray-600 text-sm">Visibility of farmers & farm produce</p>
+    <span class="">
+        {{ $icon }}
+    </span>
+    <h3 class="mb-1 text-base font-semibold tracking-tight text-green-800">{{ $title }}</h3>
+    <p class="text-sm font-medium text-center text-gray-500">{{ $description }}</p>
 </div>

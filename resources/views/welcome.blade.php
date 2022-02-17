@@ -7,13 +7,14 @@
 
     <title>{{ Str::of(config('app.name'))->upper() }}</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
 </head>
 
-<body class="antialiased m-0 p-0">
+<body class="p-0 m-0 antialiased">
     <nav class="flex flex-col w-full">
-        <div class="w-full hidden sm:flex bg-white justify-between px-10 md:px-20 py-2">
+        <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
             <div>Logo</div>
             <div class="flex items-center justify-end space-x-5 text-xs">
                 <a href="">Phone</a>
@@ -24,7 +25,7 @@
             </div>
         </div>
         <div
-            class="w-full bg-zinc-800 py-5 text-base text-white font-medium flex items-center justify-between px-10 md:px-20">
+            class="flex items-center justify-between w-full px-10 py-5 text-base font-medium text-white bg-zinc-800 md:px-20">
             <div class="flex items-center justify-start space-x-5 md:space-x-10">
                 <a href="">Home</a>
                 <a href="">About</a>
@@ -32,32 +33,33 @@
                 <a href="">Contact</a>
             </div>
             <button
-                class="bg-green-600 text-xs font-semibold tracking-wider px-4 py-2 text-white  rounded-lg hover:bg-green-700">
+                class="px-4 py-2 text-xs font-semibold tracking-wider text-white bg-green-600 rounded-lg hover:bg-green-700">
                 Join Us
             </button>
         </div>
     </nav>
-    <header class="">
-        <div class="py-28 flex flex-col px-10 md:px-20 w-full sm:w-3/4 md:w-2/3 space-y-10">
-            <h1 class="capitalize font-semibold text-4xl md:text-5xl">Well Rooted in Nature</h1>
-            <p class="text-sm tracking-wide font-medium text-gray-500">
+    <header class="text-white bg-center bg-no-repeat bg-cover"
+        style="background-image: url('{{ asset('images/header.jpg') }}')">
+        <div class="flex flex-col w-full px-10 space-y-10 py-28 md:px-20 sm:w-3/4 md:w-2/3">
+            <h1 class="text-4xl font-bold capitalize md:text-5xl">Well Rooted in Nature</h1>
+            <p class="text-sm font-medium tracking-wide text-gray-200">
                 Ann Maries Gallery Limited provides the best quality and affordable cosmetics raw materials and food
                 commodities to every small and medium enterprises in both Local and International markets.
             </p>
 
             <div class="flex space-x-5">
                 <button
-                    class="px-3 py-2 rounded-lg hover:bg-opacity-80 bg-green-600 text-sm font-medium text-white F">Contact
+                    class="px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-opacity-80 F">Contact
                     Us</button>
-                <button class="px-3 py-2 rounded-lg  bg-white text-sm font-medium">Read More</button>
+                <button class="px-3 py-2 text-sm font-medium text-green-600 bg-white rounded-lg">Read More</button>
             </div>
 
         </div>
     </header>
     <section
-        class="px-10 md:px-20 py-16 flex flex-col  sm:grid bg-green-600 sm:grid-cols-4 gap-5 text-white items-center justify-start">
-        <div class="sm:col-span-1 sm:border-l-8 sm:border-white-600 px-5 sm:h-full flex items-center">
-            <h2 class="font-semibold text-lg">About Us</h2>
+        class="flex flex-col items-center justify-start gap-5 px-10 py-16 text-white bg-green-600 md:px-20 sm:grid sm:grid-cols-4">
+        <div class="flex items-center px-5 sm:col-span-1 sm:border-l-8 sm:border-white-600 sm:h-full">
+            <h2 class="text-lg font-semibold">About Us</h2>
         </div>
         <p class="h-full col-span-3 font-normal text-justify">
             Ann-Maries Gallery Limited is a corporate entity that engages in sourcing, buying, sorting, cleaning,
@@ -66,28 +68,28 @@
             market and intelligence for better decision making
         </p>
     </section>
-    <section class="relative py-10 px-10 md:px-20 bg-lime-500 text-white flex flex-col space-y-2">
-        <h2 class="capitalize text-xl">Our statistics</h2>
+    <section class="relative flex flex-col px-10 py-10 space-y-2 text-white md:px-20 bg-lime-500">
+        <h2 class="text-xl capitalize">Our statistics</h2>
         <p>
             Our Acchivement in the journey depicted in numbers
         </p>
-        {{-- <div class="border py-6 absolute -bottom-32 left-10 md:left-20 right-10 md:right-20">
+        {{-- <div class="absolute py-6 border -bottom-32 left-10 md:left-20 right-10 md:right-20">
             <x-hexagon></x-hexagon>
         </div> --}}
     </section>
-    <section class="sm:px-10 md:px-20 sm:py-10 relative overflow-hidden">
-        <div class="w-full relative overflow-hidden">
-            <div class="absolute hidden sm:block h-32 w-32 rounded-full -top-16 -left-16 bg-green-600"></div>
-            <div class="absolute hidden sm:block h-32 w-32 rounded-full -bottom-16 -right-16 bg-green-600"></div>
-            <div class="py-10 md:px-12 flex items-start flex-col justify-center">
-                <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 w-full">
+    <section class="relative overflow-hidden sm:px-10 md:px-20 sm:py-10">
+        <div class="relative w-full overflow-hidden">
+            <div class="absolute hidden w-32 h-32 bg-green-600 rounded-full sm:block -top-16 -left-16"></div>
+            <div class="absolute hidden w-32 h-32 bg-green-600 rounded-full sm:block -bottom-16 -right-16"></div>
+            <div class="flex flex-col items-start justify-center py-10 md:px-12">
+                <div class="grid w-full grid-cols-1 lg:grid-cols-2 lg:gap-20">
                     <div class="rounded-lg md:px-20">
-                        <img src="{{ asset('images/img-1.jpg') }}" class="sm:rounded-lg w-full lg:h-full object-cover"
+                        <img src="{{ asset('images/img-1.jpg') }}" class="object-cover w-full sm:rounded-lg lg:h-full"
                             alt="" srcset="">
                     </div>
                     <div
-                        class="flex flex-col items-center justify-center px-12 py-12 lg:py-36 lg:px-24 font-medium text-base">
-                        <h2 class="uppercase font-medium text-lg text-gray-700 mb-5">Our Vision</h2>
+                        class="flex flex-col items-center justify-center px-12 py-12 text-base font-medium lg:py-36 lg:px-24">
+                        <h2 class="mb-5 text-lg font-medium text-gray-700 uppercase">Our Vision</h2>
                         <p>
                             To deliver the best quality commodities oustanding customer
                             service and brilliant experience through our superior best practice service delivery and
@@ -98,8 +100,8 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-20">
                     <div
-                        class="flex flex-col items-center justify-center px-12 py-12 lg:py-36 lg:px-24 font-medium text-base">
-                        <h2 class="uppercase font-medium text-lg text-gray-700 mb-5">Our Vision</h2>
+                        class="flex flex-col items-center justify-center px-12 py-12 text-base font-medium lg:py-36 lg:px-24">
+                        <h2 class="mb-5 text-lg font-medium text-gray-700 uppercase">Our Vision</h2>
                         <p>
                             To deliver the best quality commodities oustanding customer
                             service and brilliant experience through our superior best practice service delivery and
@@ -108,73 +110,216 @@
                         </p>
                     </div>
                     <div class="rounded-lg md:px-20">
-                        <img src="{{ asset('images/img-1.jpg') }}" class="sm:rounded-lg w-full lg:h-full object-cover"
+                        <img src="{{ asset('images/img-2.jpg') }}" class="object-cover w-full sm:rounded-lg lg:h-full"
                             alt="" srcset="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="w-full">
+    <section class="w-full bg-center bg-no-repeat bg-cover"
+        style="background-image: url('{{ asset('images/influence.jpg') }}')">
         <div
-            class="bg-gray-800 bg-opacity-50 text-white flex flex-col items-center justify-center space-y-10 py-20 px-10 md:px-20">
-            <h2 class="font-semibold text-lg ">Our Influence</h2>
-            <p class="text-center">
+            class="flex flex-col items-center justify-center px-10 py-20 space-y-10 text-white bg-gray-800 bg-opacity-50 md:px-20">
+            <h2 class="text-lg font-semibold ">Our Influence</h2>
+            <p class="max-w-md text-center">
                 We enhance sustainablity rural development that enable woman and youths to be self sufficient and
                 contribute to global economy
             </p>
         </div>
     </section>
-    <section class="px-10 py-20 sm:px-20 flex flex-col items-center justify-center space-y-10">
-        <h2 class="font-semibold text-lg">Why Us</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <x-reason></x-reason>
-            <x-reason></x-reason>
-            <x-reason></x-reason>
-            <x-reason></x-reason>
-            <x-reason></x-reason>
-            <x-reason></x-reason>
+    <section class="flex flex-col items-center justify-center px-10 py-20 space-y-10 sm:px-20">
+        <h2 class="text-lg font-semibold">Why Us</h2>
+        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
+            <x-reason>
+                <x-slot name="icon">
+                    <img src="{{ asset('images/icons/Group 15587.svg') }}" alt="">
+                </x-slot>
+                <x-slot name="title">
+                    Bulk Sales
+                </x-slot>
+                <x-slot name="description">
+                    Visibilities & farm produce
+                </x-slot>
+            </x-reason>
+            <x-reason>
+                <x-slot name="icon">
+                    <img src="{{ asset('images/icons/Group 15588.svg') }}" alt="">
+                </x-slot>
+                <x-slot name="title">
+                    Customer Friendly
+                </x-slot>
+                <x-slot name="description">
+                    Oustanding customer services & a brilliant experience
+                </x-slot>
+            </x-reason>
+            <x-reason>
+                <x-slot name="icon">
+                    <img src="{{ asset('images/icons/Group 15589.svg') }}" alt="">
+                </x-slot>
+                <x-slot name="title">
+                    Innovation
+                </x-slot>
+                <x-slot name="description">
+                    Farmer's access to innovative ways to increase yield
+                </x-slot>
+            </x-reason>
+            <x-reason>
+                <x-slot name="icon">
+                    <img src="{{ asset('images/icons/Group 15591.svg') }}" alt="">
+                </x-slot>
+                <x-slot name="title">
+                    Distribution
+                </x-slot>
+                <x-slot name="description">
+                    A strong supply chain of agriculture products to market
+                </x-slot>
+            </x-reason>
+            <x-reason>
+                <x-slot name="icon">
+                    <img src="{{ asset('images/icons/Group 15590.svg') }}" alt="">
+                </x-slot>
+                <x-slot name="title">
+                    Communication
+                </x-slot>
+                <x-slot name="description">
+                    Increase access to information and off-take market
+                </x-slot>
+            </x-reason>
+            <x-reason>
+                <x-slot name="icon">
+                    <img src="{{ asset('images/icons/Group 15592.svg') }}" alt="">
+                </x-slot>
+                <x-slot name="title">
+                    Networking
+                </x-slot>
+                <x-slot name="description">
+                    Connecting of farmers, Millers, Community Agents through Cooperative & Meetups
+                </x-slot>
+            </x-reason>
         </div>
     </section>
-    <section class="flex flex-col items-center justify-center space-y-10 w-full">
-        <h2 class="font-semibold text-lg">Our Project</h2>
-        <div class="w-full swiper mySwipper">
-            <ul class="block w-full h-72 border swiper-wrapper">
-                <li class="w-full h-full swiper-slide">
+    <section class="flex flex-col items-center justify-center w-full space-y-10">
+        <h2 class="text-lg font-semibold">Our Project</h2>
+        {{-- <div class="w-full h-72 swiper mySwipper">
+            <div class="w-full h-full swiper-wrapper">
+                <div class="block w-full h-full swiper-slide">
                     <img src="{{ asset('images/img-1.jpg') }}" class="object-cover w-full h-full" alt="">
-                </li>
-                <li class="w-full h-full swiper-slide">
-                    <img src="{{ asset('images/img-1.jpg') }}" class="object-cover w-full h-full" alt="">
-                </li>
-            </ul>
+                </div>
+                <div class="block w-full h-full swiper-slide">
+                    <img src="{{ asset('images/img-2.jpg') }}" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="block w-full h-full swiper-slide">
+                    <img src="{{ asset('images/img-2.jpg') }}" class="object-cover w-full h-full" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div> --}}
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="w-full bg-green-600">
-        <div class="px-10 sm:px-20 py-20">
-            <h2 class="font-semibold text-lg text-white">Reviews</h2>
+        <div class="px-10 py-20 sm:px-20">
+            <h2 class="text-lg font-semibold text-white">Reviews</h2>
             <div class="pt-10">
                 <x-testimonial></x-testimonial>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="px-10 sm:px-20 grid grid-cols-1 md:grid-cols-3">
-            <div>
+    <footer class="flex flex-col text-white bg-gray-900 divide-y divide-gray-500">
+        <div class="grid w-full grid-cols-1 px-10 py-10 mx-auto sm:px-20 md:grid-cols-3 gap-y-10 gap-x-5">
+            <div class="flex flex-col space-y-5">
+                <div>
 
+                </div>
+                <div>
+                    <h3 class="mb-5 text-lg font-semibold text-center capitalize">Address</h3>
+                    <address class="text-center">
+                        Plot No. 257, Along 1(R) 421 Road,<br>
+                        Federal Housing Authority,<br>
+                        Lugbe Estate Abuja,<br>
+                        Nigeria.
+                    </address>
+                </div>
+                <div>
+                    <h2 class="mb-5 text-lg font-semibold text-center capitalize">Contact Us</h2>
+                    <div class="flex items-center justify-center w-full space-x-5 md:justify-center">
+                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                            <img src="{{ asset('images/icons/facebook.png') }}" class="w-full h-full" alt="">
+                        </a>
+                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                            <img src="{{ asset('images/icons/twitter.png') }}" class="w-full h-full" alt="">
+                        </a>
+                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                            <img src="{{ asset('images/icons/instagram.png') }}" class="w-full h-full" alt="">
+                        </a>
+                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                            <img src="{{ asset('images/icons/whatsapp.png') }}" class="w-full h-full" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <h2 class="mb-5 text-lg font-semibold text-center capitalize">Our Network</h2>
+                <ul
+                    class="flex flex-col items-center justify-start space-y-2 text-sm leading-6 tracking-wide font-base">
+                    <li>Farmers</li>
+                    <li>Bundlers</li>
+                    <li>Millers</li>
+                    <li>Farmer Cooperative</li>
+                    <li>Commodity Aggregators</li>
+                    <li>Community Owners</li>
+                    <li>Warehouse Owners</li>
+                </ul>
             </div>
             <div>
+                <div class="flex flex-col items-center justify-start">
+                    <h3 class="text-lg font-bold text-center capitalize">Send Us A message</h3>
+                    <form action="" method="post"
+                        class="flex flex-col items-center justify-start max-w-sm mt-5 space-y-2">
 
-            </div>
-            <div>
+                        <div class="flex flex-col items-start justify-start w-full space-y-1">
+                            <label for="fullname" class="text-sm font-bold tracking-wider">Full Name</label>
+                            <input type="text" name="fullname" required
+                                class="w-full px-3 py-2 text-sm tracking-wider bg-gray-700 rounded-lg font-base focus:outline-none"
+                                placeholder="Enter your full Name">
+                        </div>
 
+                        <div class="flex flex-col items-start justify-start w-full space-y-1">
+                            <label for="email" class="text-sm font-bold tracking-wider">Email</label>
+                            <input type="text" name="email" required
+                                class="w-full px-3 py-2 text-sm tracking-wider bg-gray-700 rounded-lg font-base focus:outline-none"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="flex flex-col items-start justify-start w-full space-y-1">
+                            <label for="fullname" class="text-sm font-bold tracking-wider">Message</label>
+                            <textarea name="fullname" cols="30" rows="5" required
+                                class="w-full px-3 py-2 text-sm tracking-wider bg-gray-700 rounded-lg resize-none font-base focus:outline-none"
+                                placeholder="Enter your Message"></textarea>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="flex items-end justify-center border-t
-        32564">
-
+        <div class="flex items-end justify-center py-2 text-gray-400">
+            <p>&copy Copyrights {{ now()->year }} </p>
         </div>
     </footer>
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
