@@ -16,9 +16,9 @@ class MessageMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(public $data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -28,6 +28,7 @@ class MessageMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->markdown('mail.message-mail')
+            ->subject(config('app.name') . ' -  A New Message');
     }
 }
