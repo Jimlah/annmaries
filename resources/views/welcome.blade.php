@@ -7,6 +7,7 @@
 
     <title>{{ Str::of(config('app.name'))->upper() }}</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/x-icon">
     <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
@@ -143,8 +144,8 @@
             <div class="flex flex-col items-start justify-center py-10 md:px-12">
                 <div class="grid w-full grid-cols-1 lg:grid-cols-2 lg:gap-20">
                     <div class="rounded-lg md:px-20">
-                        <img src="{{ asset('images/img-1.jpg') }}" class="object-cover w-full sm:rounded-lg lg:h-full"
-                            alt="" srcset="">
+                        <img src="{{ asset('images/img-1.jpg') }}"
+                            class="object-cover w-full sm:rounded-lg lg:h-full" alt="" srcset="">
                     </div>
                     <div
                         class="flex flex-col items-center justify-center px-12 py-12 text-base font-medium lg:py-36 lg:px-24">
