@@ -12,7 +12,7 @@
     <!-- Fonts -->
 </head>
 
-<body class="p-0 m-0 antialiased">
+<body class="p-0 m-0 antialiased scroll-smooth">
     <nav class="flex flex-col w-full">
         <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
             <img src="{{ asset('images/logo.png') }}" class="h-12" alt="logo">
