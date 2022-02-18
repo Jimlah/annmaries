@@ -15,7 +15,7 @@
 <body class="p-0 m-0 antialiased">
     <nav class="flex flex-col w-full">
         <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
-            <div>Logo</div>
+            <img src="{{ asset('images/logo.png') }}" class="h-12" alt="logo">
             <div class="flex items-center justify-end space-x-5 text-xs">
                 <a href="">Phone</a>
                 <a href="">Email</a>
@@ -244,8 +244,8 @@
     <footer class="flex flex-col text-white bg-gray-900 divide-y divide-gray-500">
         <div class="grid w-full grid-cols-1 px-10 py-10 mx-auto sm:px-20 md:grid-cols-3 gap-y-10 gap-x-5">
             <div class="flex flex-col space-y-5">
-                <div>
-
+                <div class="flex flex-col items-center justify-start">
+                    <img src="{{ asset('images/logo.png') }}" alt="logo" class="h-32 -mt-10">
                 </div>
                 <div>
                     <h3 class="mb-5 text-lg font-semibold text-center capitalize">Address</h3>

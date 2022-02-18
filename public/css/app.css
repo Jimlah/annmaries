@@ -489,6 +489,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-6 {
   margin-top: 1.5rem;
 }
+.-mt-10 {
+  margin-top: -2.5rem;
+}
 .block {
   display: block;
 }
@@ -515,6 +518,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-10 {
   height: 2.5rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-20 {
+  height: 5rem;
 }
 .w-full {
   width: 100%;
