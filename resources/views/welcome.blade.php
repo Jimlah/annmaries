@@ -17,20 +17,59 @@
         <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
             <img src="{{ asset('images/logo.png') }}" class="h-12" alt="logo">
             <div class="flex items-center justify-end space-x-5 text-xs">
-                <a href="">Phone</a>
-                <a href="">Email</a>
-                <a href="">
-                    <address>Address</address>
+                <a href="" class="flex items-center space-x-2">
+                    <span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="flex flex-col items-start justify-center text-xs font-semibold">
+                        <span class="font-bold">info@annmariesgallery.com</span>
+                        <span>Send an Email</span>
+                    </span>
+                </a>
+                <a href="" class="flex items-center space-x-2">
+                    <span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="flex flex-col items-start justify-center text-xs font-semibold">
+                        <span class="font-bold">08050229095</span>
+                        <span>Call Us</span>
+                    </span>
+                </a>
+                <a href="" class="flex items-center space-x-2">
+                    <span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </span>
+                    <address class="flex flex-col items-start justify-center text-xs font-semibold">
+                        <span class="font-bold capitalize">PLot No, 257 Along 1 (R) 421 Road </span>
+                        <span>FHA, Lugbe Estate, Abuja</span>
+                    </address>
                 </a>
             </div>
         </div>
         <div
             class="flex items-center justify-between w-full px-10 py-5 text-base font-medium text-white bg-zinc-800 md:px-20">
             <div class="flex items-center justify-start space-x-5 md:space-x-10">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -52,7 +91,7 @@
 
         </div>
     </header>
-    <section
+    <section id="about"
         class="flex flex-col items-center justify-start gap-5 px-10 py-16 text-white bg-green-600 md:px-20 sm:grid sm:grid-cols-4">
         <div class="flex items-center px-5 sm:col-span-1 sm:border-l-8 sm:border-white-600 sm:h-full">
             <h2 class="text-lg font-semibold">About Us</h2>
@@ -64,7 +103,7 @@
             market and intelligence for better decision making
         </p>
     </section>
-    <section class="relative flex flex-col px-10 py-10 mb-20 space-y-2 text-white md:px-20 bg-lime-500">
+    <section id="services" class="relative flex flex-col px-10 py-10 mb-20 space-y-2 text-white md:px-20 bg-lime-500">
         <div class="mb-10">
             <h2 class="text-xl capitalize">Our statistics</h2>
             <p>
@@ -123,10 +162,9 @@
                         class="flex flex-col items-center justify-center px-12 py-12 text-base font-medium lg:py-36 lg:px-24">
                         <h2 class="mb-5 text-lg font-medium text-gray-700 uppercase">Our Vision</h2>
                         <p>
-                            To deliver the best quality commodities oustanding customer
-                            service and brilliant experience through our superior best practice service delivery and
-                            unique
-                            human resource expertise
+                            Keeping our clients and patners satisfied by respecting our service level agreement (SLA)
+                            while meeting ab=nd exceeding their expectations with innovative and delivering suitable
+                            solutions to our client
                         </p>
                     </div>
                     <div class="rounded-lg md:px-20">
@@ -287,7 +325,7 @@
                         Nigeria.
                     </address>
                 </div>
-                <div>
+                <div id="contact">
                     <h2 class="mb-5 text-lg font-semibold text-center capitalize">Contact Us</h2>
                     <div class="flex items-center justify-center w-full space-x-5 md:justify-center">
                         <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
