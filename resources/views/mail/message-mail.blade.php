@@ -4,6 +4,6 @@
 {{ $data['message'] }}
 
 Thanks,<br>
-{{ $data['fullname'] }}
-{{ $data['email'] }}
+{{ $data['fullname'] }}<br>
+{{ $data['email'] }}<br>
 @endcomponent
