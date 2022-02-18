@@ -32,10 +32,6 @@
                 <a href="">Services</a>
                 <a href="">Contact</a>
             </div>
-            <button
-                class="px-4 py-2 text-xs font-semibold tracking-wider text-white bg-green-600 rounded-lg hover:bg-green-700">
-                Join Us
-            </button>
         </div>
     </nav>
     <header class="text-white bg-center bg-no-repeat bg-cover"
@@ -68,14 +64,38 @@
             market and intelligence for better decision making
         </p>
     </section>
-    <section class="relative flex flex-col px-10 py-10 space-y-2 text-white md:px-20 bg-lime-500">
-        <h2 class="text-xl capitalize">Our statistics</h2>
-        <p>
-            Our Acchivement in the journey depicted in numbers
-        </p>
-        {{-- <div class="absolute py-6 border -bottom-32 left-10 md:left-20 right-10 md:right-20">
-            <x-hexagon></x-hexagon>
-        </div> --}}
+    <section class="relative flex flex-col px-10 py-10 mb-20 space-y-2 text-white md:px-20 bg-lime-500">
+        <div class="mb-10">
+            <h2 class="text-xl capitalize">Our statistics</h2>
+            <p>
+                Our Acchivement in the journey depicted in numbers
+            </p>
+        </div>
+        <div class="absolute py-6 -bottom-24 left-10 md:left-20 right-10 md:right-20">
+            <div class="flex items-center w-full justify-evenly">
+                <x-hexagon>
+                    <x-slot name="icon">
+                        <img src="{{ asset('images/icons/Group 15542.svg') }}" class="w-full h-full" alt="">
+                    </x-slot>
+                    <x-slot name="number">1000</x-slot>
+                    <x-slot name="title"> Farmers </x-slot>
+                </x-hexagon>
+                <x-hexagon>
+                    <x-slot name="icon">
+                        <img src="{{ asset('images/icons/Group 15544.svg') }}" class="w-full h-full" alt="">
+                    </x-slot>
+                    <x-slot name="number">200</x-slot>
+                    <x-slot name="title"> Community Aggregator </x-slot>
+                </x-hexagon>
+                <x-hexagon>
+                    <x-slot name="icon">
+                        <img src="{{ asset('images/icons/Group 15547.svg') }}" class="w-full h-full" alt="">
+                    </x-slot>
+                    <x-slot name="number">40</x-slot>
+                    <x-slot name="title"> Warehouses </x-slot>
+                </x-hexagon>
+            </div>
+        </div>
     </section>
     <section class="relative overflow-hidden sm:px-10 md:px-20 sm:py-10">
         <div class="relative w-full overflow-hidden">
@@ -110,8 +130,8 @@
                         </p>
                     </div>
                     <div class="rounded-lg md:px-20">
-                        <img src="{{ asset('images/img-2.jpg') }}" class="object-cover w-full sm:rounded-lg lg:h-full"
-                            alt="" srcset="">
+                        <img src="{{ asset('images/img-2.jpg') }}"
+                            class="object-cover w-full sm:rounded-lg lg:h-full" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -201,37 +221,36 @@
     </section>
     <section class="flex flex-col items-center justify-center w-full space-y-10">
         <h2 class="text-lg font-semibold">Our Project</h2>
-        {{-- <div class="w-full h-72 swiper mySwipper">
-            <div class="w-full h-full swiper-wrapper">
-                <div class="block w-full h-full swiper-slide">
-                    <img src="{{ asset('images/img-1.jpg') }}" class="object-cover w-full h-full" alt="">
-                </div>
-                <div class="block w-full h-full swiper-slide">
-                    <img src="{{ asset('images/img-2.jpg') }}" class="object-cover w-full h-full" alt="">
-                </div>
-                <div class="block w-full h-full swiper-slide">
-                    <img src="{{ asset('images/img-2.jpg') }}" class="object-cover w-full h-full" alt="">
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div> --}}
         <!-- Slider main container -->
-        <div class="w-full overflow-hidden">
-            <div class="swiper" class="w-full">
+        <div class="w-full overflow-hidden border ">
+            <div class="w-full h-72 swiper">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="w-full swiper-wrapper">
                     <!-- Slides -->
-                    <div class=" swiper-slide h-1/3">
-                        <img src="{{ asset('images/header.jpg') }}" class="h-full" alt="image1">
+                    <div class="w-full h-full swiper-slide">
+                        <img src="{{ asset('images/slider/An Maries Gallery Coperate Profile_page7_image10.jpg') }}"
+                            class="object-cover w-full h-full" alt="image1">
                     </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('images/header.jpg') }}" class="h-full" alt="image1">
+                    <div class="w-full swiper-slide">
+                        <img src="{{ asset('images/slider/An Maries Gallery Coperate Profile_page7_image12.jpg') }}"
+                            class="object-cover w-full h-full" alt="image1">
                     </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('images/header.jpg') }}" class="h-full" alt="image1">
+                    <div class="w-full swiper-slide">
+                        <img src="{{ asset('images/slider/An Maries Gallery Coperate Profile_page7_image13.jpg') }}"
+                            class="object-cover w-full h-full" alt="image1">
                     </div>
-                    ...
+                    <div class="w-full swiper-slide">
+                        <img src="{{ asset('images/slider/An Maries Gallery Coperate Profile_page7_image2.jpg') }}"
+                            class="object-cover w-full h-full" alt="image1">
+                    </div>
+                    <div class="w-full swiper-slide">
+                        <img src="{{ asset('images/slider/IMG-20220201-WA0055 (1).jpg') }}"
+                            class="object-cover w-full h-full" alt="image1">
+                    </div>
+                    <div class="w-full swiper-slide">
+                        <img src="{{ asset('images/slider/IMG-20220201-WA0057.jpg') }}"
+                            class="object-cover w-full h-full" alt="image1">
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
