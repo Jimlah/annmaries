@@ -290,9 +290,10 @@
             <div>
                 <div class="flex flex-col items-center justify-start">
                     <h3 class="text-lg font-bold text-center capitalize">Send Us A message</h3>
-                    <form action="" method="post"
+                    <form action="{{ route('send-message') }}" method="post"
                         class="flex flex-col items-center justify-start max-w-sm mt-5 space-y-2">
 
+                        @csrf
                         <div class="flex flex-col items-start justify-start w-full space-y-1">
                             <label for="fullname" class="text-sm font-bold tracking-wider">Full Name</label>
                             <input type="text" name="fullname" required
@@ -308,10 +309,12 @@
                         </div>
                         <div class="flex flex-col items-start justify-start w-full space-y-1">
                             <label for="fullname" class="text-sm font-bold tracking-wider">Message</label>
-                            <textarea name="fullname" cols="30" rows="5" required
+                            <textarea name="message" cols="30" rows="5" required
                                 class="w-full px-3 py-2 text-sm tracking-wider bg-gray-700 rounded-lg resize-none font-base focus:outline-none"
                                 placeholder="Enter your Message"></textarea>
                         </div>
+
+                        <button class="w-full py-2 text-center bg-green-700 rounded-lg" type="submit">Send</button>
                     </form>
                 </div>
             </div>

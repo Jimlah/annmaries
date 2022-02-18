@@ -4,5 +4,6 @@
 {{ $data['message'] }}
 
 Thanks,<br>
-{{ config('app.name') }}
+{{ $data['fullname'] }}
+{{ $data['email'] }}
 @endcomponent
