@@ -343,16 +343,19 @@
                 <div id="contact">
                     <h2 class="mb-5 text-lg font-semibold text-center capitalize">Contact Us</h2>
                     <div class="flex items-center justify-center w-full space-x-5 md:justify-center">
-                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                        <a href="https://web.facebook.com/anmariesgallery"
+                            class="w-8 p-2 bg-white rounded-full hover:opacity-50">
                             <img src="{{ asset('images/icons/facebook.png') }}" class="w-full h-full" alt="">
                         </a>
-                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                        <a href="https://twitter.com/anmariesgallery"
+                            class="w-8 p-2 bg-white rounded-full hover:opacity-50">
                             <img src="{{ asset('images/icons/twitter.png') }}" class="w-full h-full" alt="">
                         </a>
-                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                        <a href="http://instagram.com/_u/anmariesgallery"
+                            class="w-8 p-2 bg-white rounded-full hover:opacity-50">
                             <img src="{{ asset('images/icons/instagram.png') }}" class="w-full h-full" alt="">
                         </a>
-                        <a href="#" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
+                        <a href="https://wa.me/+2348050229095" class="w-8 p-2 bg-white rounded-full hover:opacity-50">
                             <img src="{{ asset('images/icons/whatsapp.png') }}" class="w-full h-full" alt="">
                         </a>
                     </div>
