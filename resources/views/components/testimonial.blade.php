@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center justify-center">
+<div class="flex flex-col items-center justify-center m-5">
     <!-- Be present above all else. - Naval Ravikant -->
     <div class="relative flex flex-col items-center justify-center w-full max-w-xs p-4 space-y-4 bg-white rounded-lg">
         <h4 class="text-base font-medium">{{ $summary }}</h4>

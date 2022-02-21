@@ -306,20 +306,22 @@
     <section class="w-full bg-green-600">
         <div class="px-10 py-20 sm:px-20">
             <h2 class="text-lg font-semibold text-white">Reviews</h2>
-            <div class="pt-10">
-                <x-testimonial>
-                    <x-slot name="summary">Incredible Experience</x-slot>
-                    <x-slot name="message">Actually, I heard shea butter darkens the skin and that made me a bit
-                        skeptical about using but, After a few
-                        days of rubbing, I realized the blackness was beginning to fade so I began to rub even more.
-                        Right now, it is not completely gone but there is a huge difference. My skin is looking way
-                        better.
-                        I am grateful to you AMG Cosmetics.</x-slot>
-                    <x-slot name="fullname">
-                        Vivienne Okwori
-                    </x-slot>
-                    <x-slot name="profession">Accountant @ MeedNetworks</x-slot>
-                </x-testimonial>
+            <div class="w-full pt-10">
+                <div class="flex flex-wrap items-center w-full justify-evenly">
+                    <x-testimonial>
+                        <x-slot name="summary">Incredible Experience</x-slot>
+                        <x-slot name="message">Actually, I heard shea butter darkens the skin and that made me a bit
+                            skeptical about using but, After a few
+                            days of rubbing, I realized the blackness was beginning to fade so I began to rub even more.
+                            Right now, it is not completely gone but there is a huge difference. My skin is looking way
+                            better.
+                            I am grateful to you AMG Cosmetics.</x-slot>
+                        <x-slot name="fullname">
+                            Vivienne Okwori
+                        </x-slot>
+                        <x-slot name="profession">Accountant @ MeedNetworks</x-slot>
+                    </x-testimonial>
+                </div>
             </div>
         </div>
     </section>
