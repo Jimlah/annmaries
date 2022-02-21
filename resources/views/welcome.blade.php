@@ -13,7 +13,7 @@
     <!-- Fonts -->
 </head>
 
-<body class="p-0 m-0 antialiased scroll-smooth">
+<body class="p-0 m-0 antialiased bg-green-50 scroll-smooth">
     <nav class="flex flex-col w-full">
         <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
             <div class="flex items-center justify-end space-x-5 text-xs">
@@ -307,7 +307,19 @@
         <div class="px-10 py-20 sm:px-20">
             <h2 class="text-lg font-semibold text-white">Reviews</h2>
             <div class="pt-10">
-                <x-testimonial></x-testimonial>
+                <x-testimonial>
+                    <x-slot name="summary">Incredible Experience</x-slot>
+                    <x-slot name="message">Actually, I heard shea butter darkens the skin and that made me a bit
+                        skeptical about using but, After a few
+                        days of rubbing, I realized the blackness was beginning to fade so I began to rub even more.
+                        Right now, it is not completely gone but there is a huge difference. My skin is looking way
+                        better.
+                        I am grateful to you AMG Cosmetics.</x-slot>
+                    <x-slot name="fullname">
+                        Vivienne Okwori
+                    </x-slot>
+                    <x-slot name="profession">Accountant @ MeedNetworks</x-slot>
+                </x-testimonial>
             </div>
         </div>
     </section>

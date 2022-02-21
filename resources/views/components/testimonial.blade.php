@@ -1,10 +1,9 @@
 <div class="flex flex-col items-center justify-center">
     <!-- Be present above all else. - Naval Ravikant -->
     <div class="relative flex flex-col items-center justify-center w-full max-w-xs p-4 space-y-4 bg-white rounded-lg">
-        <h4 class="text-base font-medium">Incredible Experience</h4>
-        <p class="text-xs">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim consectetur voluptates, fugiat
-            quaerat unde et voluptate, optio illum vero ab, impedit incidunt recusandae. Aut eum ab officiis id ducimus.
+        <h4 class="text-base font-medium">{{ $summary }}</h4>
+        <p class="text-xs font-medium text-gray-400">
+            {{ $message }}
         </p>
         <div class="absolute -bottom-2">
             <div
@@ -15,8 +14,8 @@
     <div class="flex items-center mt-6 space-x-2">
         <img src="{{ asset('images/img-2.jpg') }}" class="w-10 h-10 rounded-full" alt="">
         <div class="flex flex-col text-sm">
-            <span class="font-semibold text-white">Abdullahi Jimoh</span>
-            <span class="text-xs text-gray-200 ">Software development</span>
+            <span class="font-semibold text-white capitalize">{{ $fullname }}</span>
+            <span class="text-xs text-gray-200 ">{{ $profession }}</span>
         </div>
     </div>
 </div>
