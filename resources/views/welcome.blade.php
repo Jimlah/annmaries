@@ -16,7 +16,6 @@
 <body class="p-0 m-0 antialiased scroll-smooth">
     <nav class="flex flex-col w-full">
         <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
-            <img src="{{ asset('images/logo.png') }}" class="h-12" alt="logo">
             <div class="flex items-center justify-end space-x-5 text-xs">
                 <a href="" class="flex items-center space-x-2">
                     <span>
@@ -65,13 +64,14 @@
             </div>
         </div>
         <div
-            class="flex items-center justify-between w-full px-10 py-5 text-base font-medium text-white bg-zinc-800 md:px-20">
-            <div class="flex items-center justify-start space-x-5 md:space-x-10">
+            class="flex items-center justify-between w-full px-10 py-5 space-x-1 text-base font-medium text-white bg-zinc-800 md:px-20">
+            <div class="flex flex-wrap items-center space-x-1 justify-evenly md:space-x-10 ">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </div>
+            <img src="{{ asset('images/logo.png') }}" class="h-10" alt="logo">
         </div>
     </nav>
     <header class="text-white bg-center bg-no-repeat bg-cover"
@@ -100,8 +100,8 @@
         <p class="h-full col-span-3 font-normal text-justify">
             Ann-Maries Gallery Limited is a corporate entity that engages in sourcing, buying, sorting, cleaning,
             grading, packaging, and marketing of a wide range of Nigerian Grown Commodities such as; Shea Butter,
-            Ginger, Sesame Seed, and Grains for domestic markets, and Exports. While empowering buyers with expensive
-            market and intelligence for better decision making
+            Ginger, Sesame Seed, and Grains for domestic markets, and Exports. while empowering buyers with extensive
+            market intelligence for better decision making.
         </p>
     </section>
     <section id="services" class="relative flex flex-col px-10 py-10 mb-20 space-y-2 text-white md:px-20 bg-lime-500">
@@ -161,11 +161,11 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-20">
                     <div
                         class="flex flex-col items-center justify-center px-12 py-12 text-base font-medium lg:py-36 lg:px-24">
-                        <h2 class="mb-5 text-lg font-medium text-gray-700 uppercase">Our Vision</h2>
+                        <h2 class="mb-5 text-lg font-medium text-gray-700 uppercase">Our Values</h2>
                         <p>
                             Keeping our clients and patners satisfied by respecting our service level agreement (SLA)
-                            while meeting ab=nd exceeding their expectations with innovative and delivering suitable
-                            solutions to our client
+                            while meeting and exceeding their expectations. The drive for high customer satisfaction has
+                            constantly pushed us to be innovative, & delivering suitable solutions to all our clients.
                         </p>
                     </div>
                     <div class="rounded-lg md:px-20">
@@ -182,8 +182,8 @@
             class="flex flex-col items-center justify-center px-10 py-20 space-y-10 text-white bg-gray-800 bg-opacity-50 md:px-20">
             <h2 class="text-lg font-semibold ">Our Influence</h2>
             <p class="max-w-md text-center">
-                We enhance sustainablity rural development that enable woman and youths to be self sufficient and
-                contribute to global economy
+                We enhance sustainability in rural development that enables women and youths to be self sufficient, and
+                contribute to global economy.
             </p>
         </div>
     </section>
@@ -259,7 +259,7 @@
         </div>
     </section>
     <section class="flex flex-col items-center justify-center w-full space-y-10">
-        <h2 class="text-lg font-semibold">Our Project</h2>
+        <h2 class="text-lg font-semibold">Our Projects</h2>
         <!-- Slider main container -->
         <div class="w-full overflow-hidden border ">
             <div class="w-full h-72 swiper">
@@ -315,7 +315,7 @@
         <div class="grid w-full grid-cols-1 px-10 py-10 mx-auto sm:px-20 md:grid-cols-3 gap-y-10 gap-x-5">
             <div class="flex flex-col space-y-5">
                 <div class="flex flex-col items-center justify-start">
-                    <img src="{{ asset('images/logo.png') }}" alt="logo" class="h-32 -mt-10">
+                    <img src="{{ asset('images/logo.png') }}" alt="logo" class="h-24">
                 </div>
                 <div>
                     <h3 class="mb-5 text-lg font-semibold text-center capitalize">Address</h3>
