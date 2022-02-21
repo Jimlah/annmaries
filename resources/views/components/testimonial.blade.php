@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="flex items-center mt-6 space-x-2">
-        <img src="{{ asset('images/img-2.jpg') }}" class="w-10 h-10 rounded-full" alt="">
+        <img src="{{ asset('images/icons/user-woman.png') }}" class="w-10 h-10 rounded-full" alt="">
         <div class="flex flex-col text-sm">
             <span class="font-semibold text-white capitalize">{{ $fullname }}</span>
             <span class="text-xs text-gray-200 ">{{ $profession }}</span>
