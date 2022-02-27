@@ -15,8 +15,8 @@
 
 <body class="p-0 m-0 antialiased bg-green-50 scroll-smooth">
     <nav class="flex flex-col w-full">
-        <div class="justify-between hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
-            <div class="flex items-center justify-end space-x-5 text-xs">
+        <div class="items-center justify-center hidden w-full px-10 py-2 bg-white sm:flex md:px-20">
+            <div class="flex items-center w-full space-x-5 text-xs justify-evenly">
                 <a href="" class="flex items-center space-x-2">
                     <span>
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -65,13 +65,13 @@
         </div>
         <div
             class="flex items-center justify-between w-full px-10 py-5 space-x-1 text-base font-medium text-white bg-zinc-800 md:px-20">
+            <img src="{{ asset('images/logo.png') }}" class="h-10" alt="logo">
             <div class="flex flex-wrap items-center space-x-1 justify-evenly md:space-x-10 ">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </div>
-            <img src="{{ asset('images/logo.png') }}" class="h-10" alt="logo">
         </div>
     </nav>
     <header class="text-white bg-center bg-no-repeat bg-cover"
@@ -308,18 +308,116 @@
             <h2 class="text-lg font-semibold text-white">Reviews</h2>
             <div class="w-full pt-10">
                 <div class="flex flex-wrap items-center w-full justify-evenly">
-                    <x-testimonial>
-                        <x-slot name="summary">Incredible Experience</x-slot>
-                        <x-slot name="message">Actually, I heard shea butter darkens the skin and that made me a bit
-                            skeptical about using but, After a few
-                            days of rubbing, I realized the blackness was beginning to fade so I began to rub even more.
-                            Right now, it is not completely gone but there is a huge difference. My skin is looking way
-                            better.
-                            I am grateful to you AMG Cosmetics.</x-slot>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">BETTER THAN EXPECTED!</x-slot>
+                        <x-slot name="message">
+                            I purchased Raw Shea Butter from AMG, months ago, & I’m on my fourth order! This is the only
+                            product for my skin, & also a perfect blend for my skin formulations, coz it has changed
+                            drastically since using it. My skin was always dry, but not anymore, my complexion continues
+                            to get better & better! The breakouts, I still do have but are very little now, I no longer
+                            have to struggle with dry skin & acne. Shea Butter from AMG is highly recommended.👍👍
+                            <br />
+                            *BONUS: * they also have a brilliant customer service.
+                        </x-slot>
                         <x-slot name="fullname">
                             Vivienne Okwori
                         </x-slot>
                         <x-slot name="profession">Accountant @ MeedNetworks</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='male'>
+                        <x-slot name="summary">CONSISTENCY!</x-slot>
+                        <x-slot name="message">
+                            Ann Marie Gallery has been a consistent and great addition to our supply chain. Out of the
+                            numerous suppliers, we notice their grains stands out In terms of quality and quantity. One
+                            key thing we also notice is their timely delivery when issued LPO and also also
+                            professionalism interms of receivable reconciliation. I’ll say every processor should have
+                            an Ann Marie Gallery for efficient and constant supply. </x-slot>
+                        <x-slot name="fullname">
+                            Engr ZoeBello Amos
+                        </x-slot>
+                        <x-slot name="profession">GM Ops ORML</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='male'>
+                        <x-slot name="summary">PROFESSIONAL!</x-slot>
+                        <x-slot name="message">
+                            The services offered were done in a professional and efficient manner,questions were
+                            answered and assurances given till confidence was built to the highest level.
+                            I have no doubt about doing business with this group because i know that at the end
+                            satisfaction is guaranteed.
+                            I’ll not hesitate to recommend them.</x-slot>
+                        <x-slot name="fullname">
+                            Oklobia E. Oklobia
+                        </x-slot>
+                        <x-slot name="profession">Co Founder: Greene Farms & Agrifoods.</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">TRUSTWORTY!</x-slot>
+                        <x-slot name="message">
+                            Ann Marie’s Gallery Shea & Mango butter is pure & unadulterated, I always make sure i get
+                            from them because i use it for my baby when she has cold and as a cosmetic products that i
+                            never joke with… I’ve been using it on my baby since birth till now on her hair and skin,
+                            because it’s mild and moisturizes her skin and makes her hair grow, i also use it on diaper
+                            rash. I use it as a moisturizer and it stops my hair from breaking… my grandma use it for
+                            almost everything and if she didn’t see Ann Marie’s sticker or container she says this isn’t
+                            a good Shea butter..
+                            You guys are definitely recommended!!!</x-slot>
+                        <x-slot name="fullname">
+                            Falmata Baba-Kasheem.
+                        </x-slot>
+                        <x-slot name="profession">Abuja, Nigeria. </x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">HONESTY!</x-slot>
+                        <x-slot name="message">
+                            This is my first time purchasing Shea & Mango Butter from AMG, I can honestly say that I’m
+                            extremely pleased with the quality of the product…. I’ll be back again….& again!!! </x-slot>
+                        <x-slot name="fullname">
+                            Gladys Yaro
+                        </x-slot>
+                        <x-slot name="profession">Kaduna, Nigeria.</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">BETTER THAN EXPECTED!</x-slot>
+                        <x-slot name="message">
+                            I’m so pleased with the quality of your Butters, so far among the best I’ve used. My skin is
+                            dry, but this Shea butter has completely healed all my cracks. It is soft, and gives me that
+                            smooth feeling whenever I use it. Your Product is definitely recommended 👍</x-slot>
+                        <x-slot name="fullname">
+                            Onyeche Onuh
+                        </x-slot>
+                        <x-slot name="profession">Austin, Texas.</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">BETTER THAN EXPECTED!</x-slot>
+                        <x-slot name="message">
+                            Your Butters and Oils are simply amazing…comes out really well in all my formulations…Good
+                            Job guys! .</x-slot>
+                        <x-slot name="fullname">
+                            Khafilat Bello
+                        </x-slot>
+                        <x-slot name="profession">Dallas, Texas.</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">QUALITY!</x-slot>
+                        <x-slot name="message">
+                            You guys were recommended by a friend, and I’ll say that the quality of your butters and
+                            oils beats my expectations….I’ll be back again!!
+                        </x-slot>
+                        <x-slot name="fullname">
+                            Bumi Afolayan
+                        </x-slot>
+                        <x-slot name="profession">Winsconsin, USA.</x-slot>
+                    </x-testimonial>
+                    <x-testimonial user='female'>
+                        <x-slot name="summary">NATURAL PRODUCTS AT THEIR BEST!!</x-slot>
+                        <x-slot name="message">
+                            I had a brilliant experience with AMG. The owner recommended some products to add to my
+                            formulations. Some are natural, and some handmade with essential oils. I recommend AMG to
+                            anyone who likes to take care of his/her body naturally!! .</x-slot>
+                        <x-slot name="fullname">
+                            Nnenna Osuagu.
+                        </x-slot>
+                        <x-slot name="profession">Minnesota, USA.</x-slot>
                     </x-testimonial>
                 </div>
             </div>
