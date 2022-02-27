@@ -308,7 +308,7 @@
             <h2 class="text-lg font-semibold text-white">Reviews</h2>
             <div class="w-full pt-10">
                 <div class="flex flex-wrap items-center w-full justify-evenly">
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-pink-900" bgColor="border-pink-900">
                         <x-slot name="summary">BETTER THAN EXPECTED!</x-slot>
                         <x-slot name="message">
                             I purchased Raw Shea Butter from AMG, months ago, & I’m on my fourth order! This is the only
@@ -324,7 +324,7 @@
                         </x-slot>
                         <x-slot name="profession">Accountant @ MeedNetworks</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='male'>
+                    <x-testimonial user='male' color="bg-green-900" bgColor="border-green-900">
                         <x-slot name="summary">CONSISTENCY!</x-slot>
                         <x-slot name="message">
                             Ann Marie Gallery has been a consistent and great addition to our supply chain. Out of the
@@ -337,7 +337,7 @@
                         </x-slot>
                         <x-slot name="profession">GM Ops ORML</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='male'>
+                    <x-testimonial user='male' color="bg-purple-900" bgColor="border-purple-900">
                         <x-slot name="summary">PROFESSIONAL!</x-slot>
                         <x-slot name="message">
                             The services offered were done in a professional and efficient manner,questions were
@@ -350,7 +350,7 @@
                         </x-slot>
                         <x-slot name="profession">Co Founder: Greene Farms & Agrifoods.</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-indigo-900" bgColor="border-indigo-900">
                         <x-slot name="summary">TRUSTWORTY!</x-slot>
                         <x-slot name="message">
                             Ann Marie’s Gallery Shea & Mango butter is pure & unadulterated, I always make sure i get
@@ -366,7 +366,7 @@
                         </x-slot>
                         <x-slot name="profession">Abuja, Nigeria. </x-slot>
                     </x-testimonial>
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-yellow-900" bgColor="border-yellow-900">
                         <x-slot name="summary">HONESTY!</x-slot>
                         <x-slot name="message">
                             This is my first time purchasing Shea & Mango Butter from AMG, I can honestly say that I’m
@@ -376,7 +376,7 @@
                         </x-slot>
                         <x-slot name="profession">Kaduna, Nigeria.</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-zinc-900" bgColor="border-zinc-900">
                         <x-slot name="summary">BETTER THAN EXPECTED!</x-slot>
                         <x-slot name="message">
                             I’m so pleased with the quality of your Butters, so far among the best I’ve used. My skin is
@@ -387,7 +387,7 @@
                         </x-slot>
                         <x-slot name="profession">Austin, Texas.</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-blue-900" bgColor="border-blue-900">
                         <x-slot name="summary">BETTER THAN EXPECTED!</x-slot>
                         <x-slot name="message">
                             Your Butters and Oils are simply amazing…comes out really well in all my formulations…Good
@@ -397,7 +397,7 @@
                         </x-slot>
                         <x-slot name="profession">Dallas, Texas.</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-teal-900" bgColor="border-teal-900">
                         <x-slot name="summary">QUALITY!</x-slot>
                         <x-slot name="message">
                             You guys were recommended by a friend, and I’ll say that the quality of your butters and
@@ -408,7 +408,7 @@
                         </x-slot>
                         <x-slot name="profession">Winsconsin, USA.</x-slot>
                     </x-testimonial>
-                    <x-testimonial user='female'>
+                    <x-testimonial user='female' color="bg-sky-900" bgColor="border-sky-900">
                         <x-slot name="summary">NATURAL PRODUCTS AT THEIR BEST!!</x-slot>
                         <x-slot name="message">
                             I had a brilliant experience with AMG. The owner recommended some products to add to my

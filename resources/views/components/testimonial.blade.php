@@ -1,13 +1,14 @@
 <div class="flex flex-col items-center justify-center m-5">
     <!-- Be present above all else. - Naval Ravikant -->
-    <div class="relative flex flex-col items-center justify-center w-full max-w-xs p-4 space-y-4 bg-white rounded-lg">
-        <h4 class="text-base font-medium">{{ $summary }}</h4>
+    <div
+        class="relative flex flex-col items-center justify-center w-full max-w-xs p-4 space-y-4  rounded-lg {{ $color ?? 'bg-white' }}">
+        <h4 class="text-base font-medium text-white">{{ $summary }}</h4>
         <p class="text-xs font-medium text-gray-400">
             {{ $message }}
         </p>
         <div class="absolute -bottom-2">
             <div
-                class="w-0 h-0 border-white border-t-[10px] border-r-transparent border-r-[5px] border-l-transparent border-l-[5px]">
+                class="w-0 h-0 border-t-[10px] border-r-transparent border-r-[5px] border-l-transparent border-l-[5px] {{ $bgColor ?? 'border-white' }}">
             </div>
         </div>
     </div>

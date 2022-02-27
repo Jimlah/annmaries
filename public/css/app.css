@@ -724,6 +724,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.border-yellow-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(113 63 18 / var(--tw-border-opacity));
+}
+.border-pink-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(131 24 67 / var(--tw-border-opacity));
+}
+.border-green-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 83 45 / var(--tw-border-opacity));
+}
+.border-purple-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 28 135 / var(--tw-border-opacity));
+}
+.border-indigo-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 46 129 / var(--tw-border-opacity));
+}
+.border-blue-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
+}
+.border-zinc-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
+}
+.border-teal-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(19 78 74 / var(--tw-border-opacity));
+}
+.border-sky-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(12 74 110 / var(--tw-border-opacity));
+}
 .border-r-transparent {
   border-right-color: transparent;
 }
@@ -765,6 +801,42 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+.bg-yellow-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 63 18 / var(--tw-bg-opacity));
+}
+.bg-pink-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(131 24 67 / var(--tw-bg-opacity));
+}
+.bg-green-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+}
+.bg-purple-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+}
+.bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+}
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+.bg-zinc-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+.bg-teal-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 78 74 / var(--tw-bg-opacity));
+}
+.bg-sky-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
